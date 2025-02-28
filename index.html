@@ -9,12 +9,12 @@
 <script src="https://kit.fontawesome.com/5f228a7dad.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section class="bg-red-200 max-w-4xl min-h-screen mx-auto">
+    <section class=" max-w-4xl min-h-screen mx-auto">
         <!-- main section -->
          <section class="flex gap-8">
             <!-- img div -->
              <div class="my-16 w-1/2">
-                <img class="" src="images/purple.png" alt="">
+                <img id="images-product" class="" src="images/purple.png" alt="">
              </div>
              <!-- text div -->
               <div class="my-16 w-1/2 pl-1">
@@ -44,21 +44,22 @@
                         <p class="font-bold ">Model:</p>
                         <p>Forerunner 290XT</p>
                        </div>
-                       <!-- color div -->
+                       <!-- color div text-->
                         <div class="mt-1">
                             <h1 class="font-bold text-lg mb-2">Band Color</h1>
+                            <!-- main color div -->
                            <div class="flex gap-2">
                              <!-- purple -->
-                             <div class="w-6 h-6 bg-purple-600  rounded-full border"></div>
+                             <div id="purple" class="w-6 h-6 bg-purple-600  rounded-full border color-box"></div>
                              
                             <!-- teal -->
-                             <div class="w-6 h-6 bg-teal-600  rounded-full border"></div>
+                             <div id="teal" class="w-6 h-6 bg-teal-600  rounded-full border color-box"></div>
                              
                             <!-- gray -->
-                             <div class="w-6 h-6 bg-gray-600  rounded-full border"></div>
+                             <div id="gray" class="w-6 h-6 bg-gray-600  rounded-full border color-box"></div>
                              
                             <!-- cyan -->
-                             <div class="w-6 h-6 bg-cyan-600  rounded-full border"></div>
+                             <div id="cyan" class="w-6 h-6 bg-cyan-600  rounded-full border color-box"></div>
                            </div>
                              
                              
@@ -68,19 +69,19 @@
                           <h1 class="font-semibold text-lg mb-2">Wrist Size</h1>
                           <!-- btn div -->
                            <div>
-                            <button class="btn btn-outline rounded-xl px-7">S $69</button>
-                            <button class="btn btn-outline rounded-xl px-7">M $79</button>
-                            <button class="btn btn-outline rounded-xl px-7">L $89</button>
-                            <button class="btn btn-outline rounded-xl px-7">XL $99</button>
+                            <button id="S" onclick="onClickBtn('S')" class="btn btn-outline rounded-xl px-7">S $69</button>
+                            <button id="M" onclick="onClickBtn('M')" class="btn btn-outline rounded-xl px-7">M $79</button>
+                            <button id="L" onclick="onClickBtn('L')" class="btn btn-outline rounded-xl px-7">L $89</button>
+                            <button id="XL" onclick="onClickBtn('XL')" class="btn btn-outline rounded-xl px-7">XL $99</button>
                            </div>
                         </div>
                         <!-- last btn -->
                          <div class="flex gap-5">
                           <!-- - + btn -->
                           <button class="btn w-28 flex justify-between ">
-                            <p>-</p>
-                            <p>1</p>
-                            <p>+</p>
+                            <p class="btn-quantity">-</p>
+                            <p id="quantity-number">0</p>
+                            <p class="btn-quantity">+</p>
                           </button>
                           <!-- 2nd btn -->
                           <button class="btn btn-outline bg-purple-800">Add To Cart
@@ -92,10 +93,10 @@
                         </div>
                          
                          </div>
-
                  </div>
               </div>
          </section>
     </section>
+    <script src="script/style.js"></script>
 </body>
 </html>
